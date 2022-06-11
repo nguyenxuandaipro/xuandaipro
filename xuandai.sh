@@ -2,9 +2,7 @@ echo "Download ngrok..."
 wget https://raw.githubusercontent.com/nguyenxuandaipro/xuandaipro/main/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
 unzip ngrok-stable-linux-amd64.zip > /dev/null 2>&1
 echo "Copy&paste your tunnel authtoken from https://dashboard.ngrok.com/auth"
-read -p "Paste Ngrock Authtoken and Enter: " CRP 
-./ngrok authtoken $CRP 
-clear
+read -p "Paste Ngrock Authtoken and Enter: " CRP
 echo "======================="
 echo choose ngrok region
 echo "======================="
