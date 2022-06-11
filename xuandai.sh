@@ -1,3 +1,16 @@
+https://raw.githubusercontent.com/nguyenxuandaipro/xuandaipro/main/xuandai.sh
+
+#@title **Start RDP**
+#@markdown Click chuột phải Ngrock Auth Token mở trong tab mới và copy token<br>
+#@markdown [Ngrok Auth Token](https://dashboard.ngrok.com/get-started/your-authtoken)<br>
+#@markdown P/s: Remote VPS bằng RDP của Windows<br>
+! wget -O xuandai.sh https://raw.githubusercontent.com/nguyenxuandaipro/xuandaipro/main/xuandai.sh > /dev/null 2>&1
+! chmod +x xuandai.sh
+! ./xuandai.sh
+
+
+
+
 echo "Download ngrok..."
 wget https://raw.githubusercontent.com/nguyenxuandaipro/xuandaipro/main/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
 unzip ngrok-stable-linux-amd64.zip > /dev/null 2>&1
@@ -10,6 +23,7 @@ echo "Chờ khoảng 5 phút, nếu thấy lâu quá chưa hiện IP bấm Enter
 sudo apt-get update > /dev/null 2>&1
 echo "Install App..."
 sudo apt install firefox -y > /dev/null 2>&1
+sudo snap install notepad-plus-plus -y > /dev/null 2>&1
 sudo apt-get install axel -y > /dev/null 2>&1
 cd /tmp
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb > /dev/null 2>&1
@@ -19,7 +33,6 @@ sudo apt-get install xarchiver > /dev/null 2>&1
 sudo apt install mkvtoolnix mkvtoolnix-gui > /dev/null 2>&1
 dpkg --add-architecture i386 && apt-get update && apt-get install wine32 > /dev/null 2>&1
 apt-get install wine32 > /dev/null 2>&1
-sudo snap install notepad-plus-plus -y > /dev/null 2>&1
 sudo apt-get install terminator > /dev/null 2>&1
 curl https://rclone.org/install.sh | sudo bash > /dev/null 2>&1
 echo "Install RDP..."
